@@ -1,0 +1,104 @@
+* {
+  font-family: arial;
+}
+#stopwatch {
+    display: inline-block;
+    font-size: 52px;
+    padding: 15px 0px;
+}
+
+.blink {
+  animation: blinkAnimation 1s infinite;
+  -webkit-animation: blinkAnimation 1s infinite;
+  -moz-animation: blinkAnimation 1s infinite;
+  -ms-animation: blinkAnimation 1s infinite;
+}
+
+
+@keyframes blinkAnimation {
+    0 {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes blinkAnimation {
+    0 {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes blinkAnimation {
+    0 {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes blinkAnimation {
+    0 {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes blinkAnimation {
+    0 {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>

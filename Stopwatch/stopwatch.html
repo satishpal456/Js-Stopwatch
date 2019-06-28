@@ -1,0 +1,95 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="stopwatch-css.css">
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+</head>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <body class="stop_body">
+<div>
+	<br>
+  <input type="button" class="btn btn-success btn-style" id="start" value="Start" onclick="obj.event('start')"/>
+  <input type="button" class="btn btn-warning btn-style" id="pause" value="Pause" onclick="obj.event('pause')"/>
+  <input type="button" class="btn btn-danger btn-style" id="stop" value="Stop" onclick="obj.event('stop')"/>
+  <input type="button" class="btn btn-info btn-style" id="reset" value="Reset" onclick="obj.event('reset')"/>
+  <input type="button" class="btn btn-primary btn-style" id="lap" value="Lap" onclick="lap()">
+  <input type="button" class="history btn-style" id="history" value="History" onclick="history()">
+</div>
+<div id="stopwatch">00:00:00</div>
+<script src="stopwatch_Js.js"></script>
+
+<!-- <p id="data">click</p><br> -->
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+				<div class="page-header text-center lap_name"><h1>Lap</h1> </div>
+				<p id="demo"></p> <br>
+			</div>
+			<div class="col-sm-8">
+				<div class="page-header text-center lap_name"><h1>History Log</h1> </div>
+				 <p id="log"></p>
+			</div>
+		</div>
+	</div>
+</div>		
+
+
+<!-- History<p id="hisss"></p> -->
+
+<!-- <footer>
+	<h4>designed by satish pal</h4>
+</footer> -->
+<!-- <div class="footer">
+  <p>&#169; &nbsp;Satish Pal</p>
+</div> -->
+</body>
+<style type="text/css">
+	.btn-style{
+		height: 40px;
+		width: 200px;
+		border-radius: 0px;
+		color: white;
+		font-weight: bold;
+	}
+	.history{
+		background-color: black;
+		border: 1px solid black;
+	}
+	#stopwatch{
+		margin-left: 400px;
+		font-size: 100px;
+		margin-top: 40px;
+	}
+	.stop_body{
+		background-color: Khaki;
+	}
+	.lap_name{
+		background-color: black;
+		color: white;
+		padding: 3px;
+		font-family: times new roman;
+		margin-top: -5px;
+	}
+	footer{
+		margin-bottom: 0px;
+		position: fixed;
+	}
+	#demo,#log{
+		font-family: comic sans ms;
+		font-weight: bold;
+		font-size: 20px;
+		color: red;
+	}
+	.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
