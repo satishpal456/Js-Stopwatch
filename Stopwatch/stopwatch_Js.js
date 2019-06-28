@@ -26,6 +26,7 @@ obj = {
           obj.refresh();
           $('#start, #stop, #pause').attr('disabled', false);
           $('#reset').attr('disabled', true);
+          $('#start').attr('disabled', true);
         break;
         case 'stop':
           obj.element.removeAttr('class');
